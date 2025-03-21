@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>lang27 Documentation</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">lang27 Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="installation/" class="nav-link">Installation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="usage/" class="nav-link">Usage</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="installation/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="true">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#lang-27-documentation" class="nav-link">Lang 27 Documentation</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#overview" class="nav-link">Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#features-and-examples" class="nav-link">Features and Examples</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#contributing" class="nav-link">Contributing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#license" class="nav-link">License</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="lang-27-documentation">Lang 27 Documentation</h1>
+<h2 id="overview">Overview</h2>
+<p><strong>Lang 27</strong> is a simple programming language designed for ease of use and readability. It supports basic syntax, data types, operators, control flow structures, functions, and built-in input/output functions.</p>
+<h3 id="github-repository"><strong>GitHub Repository:</strong></h3>
+<p><a href="https://github.com/isha1221/lang27">Lang 27 GitHub Repository</a></p>
+<hr />
+<h2 id="features-and-examples"><strong>Features and Examples</strong></h2>
+<h3 id="1-basic-syntax"><strong>1. Basic Syntax</strong></h3>
+<p>Lang 27 allows variable declarations and function definitions using clear and structured syntax.</p>
+<h4 id="example">Example:</h4>
+<h4 id="variable-declarations">Variable Declarations</h4>
+<h5 id="variables-in-lang-27-are-declared-using-the-following-format">Variables in Lang 27 are declared using the following format:</h5>
+<pre><code class="language-py">## Variable declarations
+num x = 10
+str message = &quot;Hello, Lang 27!&quot;
+dec pi = 3.14
+chr letter = 'A'
+bool isActive = true
+</code></pre>
+<h4 id="function-definitions">Function Definitions</h4>
+<h5 id="functions-are-defined-using-the-func-keyword-followed-by-a-name-and-parameters">Functions are defined using the func keyword, followed by a name and parameters:</h5>
+<hr />
+<h3 id="2-data-types"><strong>2. Data Types</strong></h3>
+<p>Lang 27 supports five primitive data types:
+- <code>num</code> - Integer values (e.g., <code>10</code>)
+- <code>str</code> - String values (e.g., <code>"Hello"</code>)
+- <code>dec</code> - Decimal values (e.g., <code>3.14</code>)
+- <code>chr</code> - Character values (e.g., <code>'A'</code>)
+- <code>bool</code> - Boolean values (<code>true</code> or <code>false</code>)</p>
+<h4 id="example_1">Example:</h4>
+<pre><code class="language-py">num count = 10
+str message = &quot;Hello, World!&quot;
+dec price = 19.99
+chr grade = 'A'
+bool isActive = true
+</code></pre>
+<hr />
+<h3 id="3-operators"><strong>3. Operators</strong></h3>
+<p>Lang 27 supports the following operators:</p>
+<h4 id="arithmetic-operators-"><strong>Arithmetic Operators:</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></h4>
+<h4 id="comparison-operators"><strong>Comparison Operators:</strong> <code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code></h4>
+<h4 id="assignment-operator"><strong>Assignment Operator:</strong> <code>=</code></h4>
+<h4 id="example_2">Example:</h4>
+<pre><code class="language-py">num a = 5
+num b = 3
+drucken(a + b)  ## Output: 8
+drucken(a &gt; b)  ## Output: true
+</code></pre>
+<hr />
+<h3 id="4-control-flow"><strong>4. Control Flow</strong></h3>
+<h4 id="if-else-statements"><strong>If-Else Statements</strong></h4>
+<pre><code class="language-py">num score = 85
+if (score &gt;= 50) {
+    drucken(&quot;Pass&quot;)
+} el {
+    drucken(&quot;Fail&quot;)
+}
+</code></pre>
+<h4 id="for-loop"><strong>For Loop</strong></h4>
+<pre><code class="language-py">for (num i = 1; i &lt;= 5; i = i + 1) {
+    drucken(i)
+}
+</code></pre>
+<hr />
+<h3 id="5-built-in-functions"><strong>5. Built-in Functions</strong></h3>
+<p>Lang 27 provides useful built-in functions.</p>
+<ul>
+<li><code>drucken(value)</code>: Prints the value to the console.</li>
+<li><code>eingabe(prompt, type)</code>: Takes user input with type conversion.</li>
+<li><code>len(value)</code>: Returns the length of a string.</li>
+<li><code>to_num(value)</code>: Converts a string to a number.</li>
+</ul>
+<h4 id="example_3">Example:</h4>
+<pre><code class="language-py">drucken(&quot;Enter your name:&quot;)
+str userName = eingabe(&quot;&quot;, str)
+drucken(&quot;Hello, &quot; + userName)
+</code></pre>
+<hr />
+<h3 id="6-function-declaration"><strong>6. Function Declaration</strong></h3>
+<p>Functions are defined using the <code>func</code> keyword.</p>
+<h4 id="example_4">Example:</h4>
+<pre><code class="language-py">func add(num a, num b) {
+    return a + b
+}
+drucken(add(10, 20))  ## Output: 30
+</code></pre>
+<hr />
+<h3 id="7-user-input-handling"><strong>7. User Input Handling</strong></h3>
+<p>Lang 27 allows user input with type conversion.</p>
+<h4 id="example_5">Example:</h4>
+<pre><code class="language-py">num userAge = eingabe(&quot;Enter your age: &quot;, num)
+drucken(&quot;Your age is: &quot; + userAge)
+</code></pre>
+<hr />
+<h3 id="8-string-manipulation"><strong>8. String Manipulation</strong></h3>
+<h4 id="example_6">Example:</h4>
+<pre><code class="language-py">str firstName = &quot;John&quot;
+str lastName = &quot;Doe&quot;
+drucken(&quot;Full name: &quot; + firstName + &quot; &quot; + lastName)
+drucken(&quot;Length of name: &quot; + len(firstName))
+</code></pre>
+<hr />
+<h3 id="9-mathematical-operations"><strong>9. Mathematical Operations</strong></h3>
+<h4 id="example_7">Example:</h4>
+<pre><code class="language-py">num x = 10
+num y = 3
+drucken(&quot;Sum: &quot; + (x + y))
+drucken(&quot;Product: &quot; + (x * y))
+</code></pre>
+<hr />
+<h3 id="10-type-conversion"><strong>10. Type Conversion</strong></h3>
+<h4 id="example_8">Example:</h4>
+<pre><code class="language-py">str numStr = &quot;42&quot;
+num convertedNum = to_num(numStr)
+drucken(&quot;Converted number: &quot; + convertedNum)
+</code></pre>
+<hr />
+<h3 id="11-nested-if-statements"><strong>11. Nested If Statements</strong></h3>
+<h4 id="example_9">Example:</h4>
+<pre><code class="language-py">num value = 10
+if (value &gt; 0) {
+    if (value % 2 == 0) {
+        drucken(&quot;Positive Even Number&quot;)
+    } el {
+        drucken(&quot;Positive Odd Number&quot;)
+    }
+} el {
+    drucken(&quot;Non-positive Number&quot;)
+}
+</code></pre>
+<hr />
+<h3 id="12-function-with-loops"><strong>12. Function with Loops</strong></h3>
+<h4 id="example_10">Example:</h4>
+<pre><code class="language-py">func factorial(num n) {
+    num result = 1
+    for (num i = 1; i &lt;= n; i = i + 1) {
+        result = result * i
+    }
+    return result
+}
+drucken(&quot;Factorial of 5: &quot; + factorial(5))
+</code></pre>
+<hr />
+<h2 id="contributing"><strong>Contributing</strong></h2>
+<p>Contributions are welcome! Feel free to submit issues and pull requests via the <a href="https://github.com/isha1221/lang27">GitHub Repository</a>.</p>
+<h2 id="license"><strong>License</strong></h2>
+<p>This project is open-source and available under the MIT License.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-03-03 08:37:57.566257+00:00
+-->

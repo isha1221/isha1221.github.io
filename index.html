@@ -1,366 +1,182 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="auto">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isha Pathak - Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <!-- Header -->
+    <header>
+        <svg class="wave-bg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="#1d5c63" d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,165.3C672,139,768,117,864,122.7C960,128,1056,160,1152,170.7C1248,181,1344,171,1392,165.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+        </svg>
+        <div class="header-content">
+            <h1 id="typewriter" data-text="Isha Pathak">Isha Pathak</h1>
+            <p>Software Developer</p>
+            <a href="./resume-doc/IshaPathak_Resume_27.pdf" download><button class="btn">Grab My Resume</button></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="card">
+        <h2>About Me</h2>
+        <p>Software Developer with hands-on experience in full-stack development, specializing in React.js, JavaScript, and Python. Passionate about building scalable AI-driven applications and leveraging machine learning for innovative solutions. Currently advancing expertise in Oracle C2M, Generative AI, and cloud technologies to drive automation and efficiency.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="card">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <span class="skill">React.js</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">TypeScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">Machine Learning</span>
+            <span class="skill">Oracle C2M</span>
+            <span class="skill">SQL & RDBMS</span>
+            <span class="skill">Java</span>
+            <span class="skill">NLP</span>
+            <span class="skill">AI-Driven Automation</span>
+            <span class="skill">REST APIs</span>
+            <span class="skill">UI/UX Design</span>
+        </div>
+    </section>
+    <!-- Experience Section -->
+    <section id="experience" class="card">
+        <h2>Experience</h2>
+        <div class="experience">
+            <h3>Software Trainee - TekGeminus Solutions Pvt. Ltd.</h3>
+            <p><em>Pune, India | 09/2023 – Present</em></p>
+            <p>Developing Oracle C2M enterprise applications using Java for billing and customer management. Spearheading AI-driven automation, contributing to a Generative AI project to optimize business workflows. Advancing expertise in Python, Machine Learning, and AI for automation and predictive analytics.</p>
+        </div>
+        <div class="experience">
+            <h3>Intern Software Trainee - TekGeminus Solutions Pvt. Ltd.</h3>
+            <p><em>Pune, India | 07/2023 – 11/2023</em></p>
+            <p>Designed and developed a Web Self-Service Portal using React.js, Redux, JavaScript, and TypeScript, boosting user engagement by 30%. Integrated REST APIs for real-time data processing and contributed to an Email Automation project. Recognized by the client for exceptional performance and innovation.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- <section id="projects" class="card">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>TASKA - Task Management Platform</h3>
+            <p>Built a task management application that allows users to create tasks, connect with friends, and track progress. Developed with React.js, TypeScript, Express.js, and PostgreSQL, ensuring scalability and robust backend integration. Designed a fully responsive UI/UX, enhancing accessibility across devices.</p>
+            <a href="https://taska.today" target="_blank" class="project-link">View Demo</a>
+        </div>
+        <div class="project">
+            <h3>IVCA - Integrated Voice and Chat Assistant</h3>
+            <p>Developed an AI-powered virtual assistant for visually impaired users, integrating voice commands and keyboard navigation. Implemented NLP and AI-driven automation using React.js, Go, Python, Redis, and Gemini AI. Optimized system performance, reducing response time by 45% through efficient AI models and caching strategies.</p>
+            <a href="http://github.com/isha1221/IVCA_Assistant" target="_blank" class="project-link">View Code</a>
+        </div>
+        <div class="project">
+            <h3>Lang27 – Custom Python-Based Programming Language</h3>
+            <p>Developed Lang27, a Python-based interpreted programming language featuring custom syntax, typed variables, function definitions, and control flow structures. Implemented a lexer, parser, and interpreter supporting arithmetic operations, conditionals, loops, and user-defined functions. Designed for flexibility and extensibility with debugging and execution tracing capabilities.</p>
+            <a href="https://github.com/isha1221/lang27" target="_blank" class="project-link">View Code</a>
+        </div>
+        <div class="project">
+            <h3>Python-Based Image Editor</h3>
+            <p>Created a feature-rich image editor with functionalities like cropping, filtering, and enhancements using Python.</p>
+            <a href="https://github.com/isha1221/py-image-editor" target="_blank" class="project-link">View Code</a>
+        </div>
+        <div class="project">
+            <h3>Conway's Game Of Life</h3>
+            <p>Developed an interactive simulation of Conway’s Game of Life using Flask and JavaScript. Designed a dynamic grid where users can toggle cells, start/pause the simulation, and apply game rules in real-time. Integrated a responsive UI with AJAX-based updates for a smooth user experience.</p>
+            <a href="https://github.com/isha1221/gameOfLife" target="_blank" class="project-link">View Code</a>
+        </div>
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>lang27 Documentation</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
-        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script> 
-    </head>
+    </section> -->
 
-    <body class="homepage">
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href=".">lang27 Documentation</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="installation/" class="nav-link">Installation</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="usage/" class="nav-link">Usage</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ms-md-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="installation/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
-                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
-                                <span class="d-lg-none ms-2">Toggle theme</span>
-                              </button>
-                              <ul class="dropdown-menu dropdown-menu-end">
-                                <li>
-                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                                    <i class="fa-solid fa-sun fa-fw"></i>
-                                    <span class="ms-2">Light</span>
-                                    <i class="fa-solid fa-check ms-auto d-none"></i>
-                                  </button>
-                                </li>
-                                <li>
-                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                                    <i class="fa-solid fa-moon fa-fw"></i>
-                                    <span class="ms-2">Dark</span>
-                                    <i class="fa-solid fa-check ms-auto d-none"></i>
-                                  </button>
-                                </li>
-                                <li>
-                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="true">
-                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
-                                    <span class="ms-2">Auto</span>
-                                    <i class="fa-solid fa-check ms-auto"></i>
-                                  </button>
-                                </li>
-                              </ul>
-                            </li>
-                    </ul>
+    <section id="projects" class="card">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>TASKA - Task Management Platform</h3>
+                <p>Built a task management app with React.js, TypeScript, Express.js, and PostgreSQL. Features task creation, friend connections, and progress tracking with a responsive UI/UX design.</p>
+                <div class="project-links">
+                    <a href="https://taska.today" target="_blank" class="project-link">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>IVCA - Integrated Voice and Chat Assistant</h3>
+                <p>An AI-powered assistant for visually impaired users with voice commands and keyboard navigation. Built with React.js, Go, Python, Redis, and Gemini AI, optimized for 45% faster response times.</p>
+                <div class="project-links">
+                    <a href="http://github.com/isha1221/IVCA_Assistant" target="_blank" class="project-link">View Code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Lang27 – Custom Python-Based Language</h3>
+                <p>A Python-based interpreted language with custom syntax, typed variables, and control flow. Features a lexer, parser, and interpreter with debugging capabilities.</p>
+                <div class="project-links">
+                    <a href="https://github.com/isha1221/lang27" target="_blank" class="project-link">View Code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Python-Based Image Editor</h3>
+                <p>A feature-rich image editor with cropping, filtering, and enhancement tools, built entirely in Python for seamless performance.</p>
+                <div class="project-links">
+                    <a href="https://github.com/isha1221/py-image-editor" target="_blank" class="project-link">View Code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Conway's Game Of Life</h3>
+                <p>An interactive simulation with a dynamic grid, built using Flask and JavaScript. Features real-time cell toggling and AJAX-based updates for a smooth experience.</p>
+                <div class="project-links">
+                    <a href="https://github.com/isha1221/gameOfLife" target="_blank" class="project-link">View Code</a>
                 </div>
             </div>
         </div>
-        <script src="js/darkmode.js"></script>
+    </section>
 
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
-
-    
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-bs-level="1"><a href="#lang-27-documentation" class="nav-link">Lang 27 Documentation</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#overview" class="nav-link">Overview</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#features-and-examples" class="nav-link">Features and Examples</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#contributing" class="nav-link">Contributing</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#license" class="nav-link">License</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
-
-<h1 id="lang-27-documentation">Lang 27 Documentation</h1>
-<h2 id="overview">Overview</h2>
-<p><strong>Lang 27</strong> is a simple programming language designed for ease of use and readability. It supports basic syntax, data types, operators, control flow structures, functions, and built-in input/output functions.</p>
-<h3 id="github-repository"><strong>GitHub Repository:</strong></h3>
-<p><a href="https://github.com/isha1221/lang27">Lang 27 GitHub Repository</a></p>
-<hr />
-<h2 id="features-and-examples"><strong>Features and Examples</strong></h2>
-<h3 id="1-basic-syntax"><strong>1. Basic Syntax</strong></h3>
-<p>Lang 27 allows variable declarations and function definitions using clear and structured syntax.</p>
-<h4 id="example">Example:</h4>
-<h4 id="variable-declarations">Variable Declarations</h4>
-<h5 id="variables-in-lang-27-are-declared-using-the-following-format">Variables in Lang 27 are declared using the following format:</h5>
-<pre><code class="language-py">## Variable declarations
-num x = 10
-str message = &quot;Hello, Lang 27!&quot;
-dec pi = 3.14
-chr letter = 'A'
-bool isActive = true
-</code></pre>
-<h4 id="function-definitions">Function Definitions</h4>
-<h5 id="functions-are-defined-using-the-func-keyword-followed-by-a-name-and-parameters">Functions are defined using the func keyword, followed by a name and parameters:</h5>
-<hr />
-<h3 id="2-data-types"><strong>2. Data Types</strong></h3>
-<p>Lang 27 supports five primitive data types:
-- <code>num</code> - Integer values (e.g., <code>10</code>)
-- <code>str</code> - String values (e.g., <code>"Hello"</code>)
-- <code>dec</code> - Decimal values (e.g., <code>3.14</code>)
-- <code>chr</code> - Character values (e.g., <code>'A'</code>)
-- <code>bool</code> - Boolean values (<code>true</code> or <code>false</code>)</p>
-<h4 id="example_1">Example:</h4>
-<pre><code class="language-py">num count = 10
-str message = &quot;Hello, World!&quot;
-dec price = 19.99
-chr grade = 'A'
-bool isActive = true
-</code></pre>
-<hr />
-<h3 id="3-operators"><strong>3. Operators</strong></h3>
-<p>Lang 27 supports the following operators:</p>
-<h4 id="arithmetic-operators-"><strong>Arithmetic Operators:</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></h4>
-<h4 id="comparison-operators"><strong>Comparison Operators:</strong> <code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code></h4>
-<h4 id="assignment-operator"><strong>Assignment Operator:</strong> <code>=</code></h4>
-<h4 id="example_2">Example:</h4>
-<pre><code class="language-py">num a = 5
-num b = 3
-drucken(a + b)  ## Output: 8
-drucken(a &gt; b)  ## Output: true
-</code></pre>
-<hr />
-<h3 id="4-control-flow"><strong>4. Control Flow</strong></h3>
-<h4 id="if-else-statements"><strong>If-Else Statements</strong></h4>
-<pre><code class="language-py">num score = 85
-if (score &gt;= 50) {
-    drucken(&quot;Pass&quot;)
-} el {
-    drucken(&quot;Fail&quot;)
-}
-</code></pre>
-<h4 id="for-loop"><strong>For Loop</strong></h4>
-<pre><code class="language-py">for (num i = 1; i &lt;= 5; i = i + 1) {
-    drucken(i)
-}
-</code></pre>
-<hr />
-<h3 id="5-built-in-functions"><strong>5. Built-in Functions</strong></h3>
-<p>Lang 27 provides useful built-in functions.</p>
-<ul>
-<li><code>drucken(value)</code>: Prints the value to the console.</li>
-<li><code>eingabe(prompt, type)</code>: Takes user input with type conversion.</li>
-<li><code>len(value)</code>: Returns the length of a string.</li>
-<li><code>to_num(value)</code>: Converts a string to a number.</li>
-</ul>
-<h4 id="example_3">Example:</h4>
-<pre><code class="language-py">drucken(&quot;Enter your name:&quot;)
-str userName = eingabe(&quot;&quot;, str)
-drucken(&quot;Hello, &quot; + userName)
-</code></pre>
-<hr />
-<h3 id="6-function-declaration"><strong>6. Function Declaration</strong></h3>
-<p>Functions are defined using the <code>func</code> keyword.</p>
-<h4 id="example_4">Example:</h4>
-<pre><code class="language-py">func add(num a, num b) {
-    return a + b
-}
-drucken(add(10, 20))  ## Output: 30
-</code></pre>
-<hr />
-<h3 id="7-user-input-handling"><strong>7. User Input Handling</strong></h3>
-<p>Lang 27 allows user input with type conversion.</p>
-<h4 id="example_5">Example:</h4>
-<pre><code class="language-py">num userAge = eingabe(&quot;Enter your age: &quot;, num)
-drucken(&quot;Your age is: &quot; + userAge)
-</code></pre>
-<hr />
-<h3 id="8-string-manipulation"><strong>8. String Manipulation</strong></h3>
-<h4 id="example_6">Example:</h4>
-<pre><code class="language-py">str firstName = &quot;John&quot;
-str lastName = &quot;Doe&quot;
-drucken(&quot;Full name: &quot; + firstName + &quot; &quot; + lastName)
-drucken(&quot;Length of name: &quot; + len(firstName))
-</code></pre>
-<hr />
-<h3 id="9-mathematical-operations"><strong>9. Mathematical Operations</strong></h3>
-<h4 id="example_7">Example:</h4>
-<pre><code class="language-py">num x = 10
-num y = 3
-drucken(&quot;Sum: &quot; + (x + y))
-drucken(&quot;Product: &quot; + (x * y))
-</code></pre>
-<hr />
-<h3 id="10-type-conversion"><strong>10. Type Conversion</strong></h3>
-<h4 id="example_8">Example:</h4>
-<pre><code class="language-py">str numStr = &quot;42&quot;
-num convertedNum = to_num(numStr)
-drucken(&quot;Converted number: &quot; + convertedNum)
-</code></pre>
-<hr />
-<h3 id="11-nested-if-statements"><strong>11. Nested If Statements</strong></h3>
-<h4 id="example_9">Example:</h4>
-<pre><code class="language-py">num value = 10
-if (value &gt; 0) {
-    if (value % 2 == 0) {
-        drucken(&quot;Positive Even Number&quot;)
-    } el {
-        drucken(&quot;Positive Odd Number&quot;)
-    }
-} el {
-    drucken(&quot;Non-positive Number&quot;)
-}
-</code></pre>
-<hr />
-<h3 id="12-function-with-loops"><strong>12. Function with Loops</strong></h3>
-<h4 id="example_10">Example:</h4>
-<pre><code class="language-py">func factorial(num n) {
-    num result = 1
-    for (num i = 1; i &lt;= n; i = i + 1) {
-        result = result * i
-    }
-    return result
-}
-drucken(&quot;Factorial of 5: &quot; + factorial(5))
-</code></pre>
-<hr />
-<h2 id="contributing"><strong>Contributing</strong></h2>
-<p>Contributions are welcome! Feel free to submit issues and pull requests via the <a href="https://github.com/isha1221/lang27">GitHub Repository</a>.</p>
-<h2 id="license"><strong>License</strong></h2>
-<p>This project is open-source and available under the MIT License.</p></div>
-            </div>
+    <!-- Fun Section -->
+    <section id="fun" class="card">
+        <h2>Fun Corner</h2>
+        <p>Spin the wheel for a peek into my world!</p>
+        <button class="btn" id="fun-btn">Spin It</button>
+        <div class="spin-circle" id="spin-circle">
+            <p id="fun-fact"></p>
         </div>
+    </section>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+    <!-- Contact Section -->
+    <section id="contact" class="card">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:ishapathak515@gmail.com">ishapathak515@gmail.com</a></p>
+        <p>Phone: 9322890365</p>
+        <p>Location: Pune, India</p>
+        <p>Connect with me:
+        <div >
+            <a href="https://www.linkedin.com/in/isha-pathak-40aa91215/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/isha1221/" target="_blank">GitHub</a>
         </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div>
+        </p>
+    </section>
 
-    </body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="hamburger" id="hamburger-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#fun">Fun</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2025-03-03 08:37:57.566257+00:00
--->
