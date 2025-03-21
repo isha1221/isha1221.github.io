@@ -391,6 +391,7 @@ h3 {
         padding: 2rem 0.5rem 3rem;
     }
     #typewriter {
+        margin-top: 1rem;
         font-size: 2rem;
     }
     .header-content p {
@@ -424,6 +425,6 @@ h3 {
         height: 120px;
     }
     #fun-fact {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
 }
