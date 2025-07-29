@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isha Pathak - Blog</title>
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Read the latest tech articles and insights by Isha Pathak, covering Python, AI, machine learning, and software development.">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Isha Pathak – Blog">
+    <meta property="og:description" content="Read the latest tech articles and insights by Isha Pathak, covering Python, AI, machine learning, and software development.">
+    <meta property="og:image" content="https://isha1221.github.io/public/android-chrome-192x192.png"> 
+    <meta property="og:url" content="https://isha1221.github.io/blog.html"> 
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Isha Pathak – Blog">
+    <meta name="twitter:description" content="Read the latest tech articles and insights by Isha Pathak, covering Python, AI, machine learning, and software development.">
+    <meta name="twitter:image" content="https://isha1221.github.io/public/android-chrome-192x192.png">
+
+    <!-- Mobile & SEO Enhancements -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://isha1221.github.io/blog.html"> 
+
+    <!-- Favicons -->
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="public/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="public/android-chrome-512x512.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="public/mstile-150x150.png" />
+    <link rel="mask-icon" href="public/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- HTMX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/1.9.10/htmx.min.js"></script>
+
+    <style>
+        /* Additional styles for blog page */
+        .blog-header {
+            background: linear-gradient(135deg, #417d7a 0%, #1d5c63 100%);
+            color: #f9e9d8;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .blog-header h1 {
+            font-family: 'Caveat', cursive;
+            font-size: 3.5rem;
+            color: #f9c66f;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .back-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+            background: #d9534f;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-family: 'Caveat', cursive;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-home:hover {
+            background: #f9c66f;
+            color: #1d5c63;
+            transform: scale(1.05);
+        }
+
+        .blog-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .loading-spinner {
+            text-align: center;
+            padding: 3rem;
+            font-size: 1.2rem;
+            color: #417d7a;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #417d7a;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 1rem auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .article-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 0;
+            border-radius: 20px 0 20px 20px;
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.15);
+            border: 2px solid #f9c66f;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .article-cover {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 18px 0 0 0;
+        }
+
+        .article-content {
+            padding: 1.5rem;
+        }
+
+        .article-title {
+            font-family: 'Caveat', cursive;
+            font-size: 1.8rem;
+            color: #1d5c63;
+            margin-bottom: 0.8rem;
+            line-height: 1.3;
+        }
+
+        .article-description {
+            color: #4a4a4a;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #6b6b6b;
+        }
+
+        .article-date {
+            background: #417d7a;
+            color: #f9e9d8;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+
+        .article-stats {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .article-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background: #f9c66f;
+            color: #1d5c63;
+            padding: 0.2rem 0.6rem;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .read-more {
+            display: inline-block;
+            background: #d9534f;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 0 10px 10px 0;
+            text-decoration: none;
+            font-family: 'Caveat', cursive;
+            font-size: 1.1rem;
+            transform: skew(-5deg);
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover {
+            background: #f9c66f;
+            color: #1d5c63;
+            transform: skew(-5deg) scale(1.05);
+        }
+
+        .error-message {
+            background: #ffebee;
+            border: 2px solid #f44336;
+            color: #c62828;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+
+        .retry-btn {
+            background: #d9534f;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-family: 'Caveat', cursive;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .retry-btn:hover {
+            background: #f9c66f;
+            color: #1d5c63;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .blog-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .back-home {
+                position: static;
+                display: block;
+                width: fit-content;
+                margin: 1rem auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-header {
+                padding: 1.5rem 0.5rem;
+            }
+            
+            .blog-header h1 {
+                font-size: 2rem;
+            }
+            
+            .article-content {
+                padding: 1rem;
+            }
+            
+            .article-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="back-home">← Back to Portfolio</a>
+
+    <div class="blog-header">
+        <h1>My Tech Blog</h1>
+        <p>Exploring the world of code, AI, and innovation</p>
+    </div>
+
+    <div class="blog-container">
+        <div id="articles-container" 
+             hx-get="https://dev.to/api/articles?username=isha1221" 
+             hx-trigger="load" 
+             hx-target="#articles-container"
+             hx-swap="innerHTML">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading latest articles...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // HTMX response handler
+        document.body.addEventListener('htmx:responseError', function(event) {
+            document.getElementById('articles-container').innerHTML = `
+                <div class="error-message">
+                    <h3>Oops! Something went wrong</h3>
+                    <p>Unable to load articles at the moment. Please try again later.</p>
+                    <button class="retry-btn" onclick="location.reload()">Retry</button>
+                </div>
+            `;
+        });
+
+        document.body.addEventListener('htmx:afterRequest', function(event) {
+            if (event.detail.successful) {
+                try {
+                    const articles = JSON.parse(event.detail.xhr.response);
+                    renderArticles(articles);
+                } catch (error) {
+                    console.error('Error parsing articles:', error);
+                    document.getElementById('articles-container').innerHTML = `
+                        <div class="error-message">
+                            <h3>Error loading articles</h3>
+                            <p>There was a problem displaying the articles. Please try again later.</p>
+                            <button class="retry-btn" onclick="location.reload()">Retry</button>
+                        </div>
+                    `;
+                }
+            }
+        });
+
+        function renderArticles(articles) {
+            const container = document.getElementById('articles-container');
+            
+            if (!articles || articles.length === 0) {
+                container.innerHTML = `
+                    <div class="error-message">
+                        <h3>No articles found</h3>
+                        <p>Check back later for new content!</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const articlesHTML = articles.map(article => {
+                const tags = article.tag_list ? article.tag_list.slice(0, 4).map(tag => 
+                    `<span class="tag">#${tag}</span>`
+                ).join('') : '';
+
+                const coverImage = article.cover_image || article.social_image || 'https://via.placeholder.com/400x200/417d7a/f9e9d8?text=Article';
+                
+                return `
+                    <div class="article-card">
+                        <img src="${coverImage}" alt="${article.title}" class="article-cover" onerror="this.src='https://via.placeholder.com/400x200/417d7a/f9e9d8?text=Article'">
+                        <div class="article-content">
+                            <h3 class="article-title">${article.title}</h3>
+                            <p class="article-description">${article.description}</p>
+                            <div class="article-meta">
+                                <span class="article-date">${article.readable_publish_date}</span>
+                                <div class="article-stats">
+                                    <span>❤️ ${article.positive_reactions_count}</span>
+                                    <span>💬 ${article.comments_count}</span>
+                                    <span>⏱️ ${article.reading_time_minutes} min</span>
+                                </div>
+                            </div>
+                            <div class="article-tags">
+                                ${tags}
+                            </div>
+                            <a href="${article.url}" target="_blank" rel="noopener noreferrer" class="read-more">
+                                Read Full Article →
+                            </a>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            container.innerHTML = `
+                <div class="articles-grid">
+                    ${articlesHTML}
+                </div>
+            `;
+        }
+
+        // Add some fun animations when articles load
+        document.body.addEventListener('htmx:afterSettle', function() {
+            const articleCards = document.querySelectorAll('.article-card');
+            articleCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
